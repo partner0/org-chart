@@ -90,6 +90,18 @@
       font-size: 0.85em;
       color: #888;
     }
+    .added {
+      color: #4CAF50;
+    }
+    .removed {
+      color: #F44336;
+    }
+    .team-box.added {
+      border-color: #4CAF50;
+    }
+    .team-box.removed {
+      border-color: #F44336;
+    }
     .team-box ul {
       margin: 0;
       padding-left: 20px;
@@ -180,19 +192,19 @@
     <tr>
       <td>
         <div class="manager"><strong>Francois Toubol</strong>, Vice President, Engineering (8/51)</div>
-        <div class="team-box">
+        <div class="team-box removed">
           <div class="team-label">Staff</div>
           <ul>
-            <li><strong>Diego Pasqualin</strong>, Staff Engineer</li>
-            <li><strong>Michael Palumbo</strong>, Staff Engineer</li>
-            <li><strong>Ricardo Marques</strong>, Staff Engineer</li>
+            <li class="removed"><strong>Diego Pasqualin</strong>, Staff Engineer</li>
+            <li class="removed"><strong>Michael Palumbo</strong>, Staff Engineer</li>
+            <li class="removed"><strong>Ricardo Marques</strong>, Staff Engineer</li>
           </ul>
         </div>
-        <div class="team-box">
+        <div class="team-box removed">
           <div class="team-label">AI of the Tiger</div>
           <ul>
-            <li>Pedro Chen, Senior Software Engineer 2</li>
-            <li>Felipe Alcantara, Senior Software Engineer 1</li>
+            <li class="removed">Pedro Chen, Senior Software Engineer 2</li>
+            <li class="removed">Felipe Alcantara, Senior Software Engineer 1</li>
           </ul>
         </div>
       </td>
@@ -251,14 +263,14 @@
     <tr>
       <td>
         <div class="manager"><strong>Paula Justi</strong>, Director, Engineering (7/24)</div>
-        <div class="team-box">
+        <div class="team-box removed">
           <div class="team-label">Core App</div>
           <ul>
-            <li>Justin Moon, Senior Software Engineer 1</li>
-            <li>Joseph Girgis, Senior Software Engineer 2</li>
-            <li>Anna Jan, Software Engineer 3</li>
-            <li>Felipe Souza, Senior Software Engineer 1</li>
-            <li>Luis Conde, Software Engineer 3</li>
+            <li class="removed">Justin Moon, Senior Software Engineer 1</li>
+            <li class="removed">Joseph Girgis, Senior Software Engineer 2</li>
+            <li class="removed">Anna Jan, Software Engineer 3</li>
+            <li class="removed">Felipe Souza, Senior Software Engineer 1</li>
+            <li class="removed">Luis Conde, Software Engineer 3</li>
           </ul>
         </div>
         <ul>
@@ -295,11 +307,11 @@
                 <li>Joao Carvalho, Software Engineer 3</li>
               </ul>
             </div>
-            <div class="team-box">
+            <div class="team-box removed">
               <div class="team-label">Platform DevX</div>
               <ul>
-                <li>Valmiky Arquisasendas, Platform Engineer 2</li>
-                <li>Danish Khakwani, Platform Engineer 3</li>
+                <li class="removed">Valmiky Arquisasendas, Platform Engineer 2</li>
+                <li class="removed">Danish Khakwani, Platform Engineer 3</li>
               </ul>
             </div>
           </li>
@@ -307,12 +319,12 @@
       </td>
       <td>
         <div class="manager"><strong>Paula Justi</strong>, Director, Engineering (5/25)</div>
-        <div class="team-box">
+        <div class="team-box added">
           <div class="team-label">Staff <span class="note">← from Francois</span></div>
           <ul>
-            <li><strong>Diego Pasqualin</strong>, Staff Engineer</li>
-            <li><strong>Michael Palumbo</strong>, Staff Engineer</li>
-            <li><strong>Ricardo Marques</strong>, Staff Engineer</li>
+            <li class="added"><strong>Diego Pasqualin</strong>, Staff Engineer</li>
+            <li class="added"><strong>Michael Palumbo</strong>, Staff Engineer</li>
+            <li class="added"><strong>Ricardo Marques</strong>, Staff Engineer</li>
           </ul>
         </div>
         <ul>
@@ -328,18 +340,18 @@
                 <li>Inès Martins, Senior Software Engineer 1</li>
               </ul>
             </div>
-            <div class="team-box">
+            <div class="team-box added">
               <div class="team-label">Platform DevX <span class="note">← from Rita</span></div>
               <ul>
-                <li>Valmiky Arquisasendas, Platform Engineer 2</li>
-                <li>Danish Khakwani, Platform Engineer 3</li>
+                <li class="added">Valmiky Arquisasendas, Platform Engineer 2</li>
+                <li class="added">Danish Khakwani, Platform Engineer 3</li>
               </ul>
             </div>
-            <div class="team-box">
+            <div class="team-box added">
               <div class="team-label">AI of the Tiger <span class="note">← from Francois</span></div>
               <ul>
-                <li>Pedro Chen, Senior Software Engineer 2</li>
-                <li>Felipe Alcantara, Senior Software Engineer 1</li>
+                <li class="added">Pedro Chen, Senior Software Engineer 2</li>
+                <li class="added">Felipe Alcantara, Senior Software Engineer 1</li>
               </ul>
             </div>
           </li>
@@ -363,10 +375,10 @@
                 <li>Joao Carvalho, Software Engineer 3</li>
               </ul>
             </div>
-            <div class="team-box">
+            <div class="team-box added">
               <div class="team-label">Beacon <span class="note">← from Mariah</span></div>
               <ul>
-                <li>Pedro Garcia, Software Engineer 3</li>
+                <li class="added">Pedro Garcia, Software Engineer 3</li>
               </ul>
             </div>
           </li>
@@ -391,10 +403,10 @@
             <li>Gregory Chavez, Senior Software Engineer 1</li>
           </ul>
         </div>
-        <div class="team-box">
+        <div class="team-box removed">
           <div class="team-label">Beacon</div>
           <ul>
-            <li>Pedro Garcia, Software Engineer 3</li>
+            <li class="removed">Pedro Garcia, Software Engineer 3</li>
           </ul>
         </div>
         <ul>
@@ -433,14 +445,14 @@
             <li>Gregory Chavez, Senior Software Engineer 1</li>
           </ul>
         </div>
-        <div class="team-box">
+        <div class="team-box added">
           <div class="team-label">Core App <span class="note">← from Paula</span></div>
           <ul>
-            <li>Justin Moon, Senior Software Engineer 1</li>
-            <li>Joseph Girgis, Senior Software Engineer 2</li>
-            <li>Anna Jan, Software Engineer 3</li>
-            <li>Felipe Souza, Senior Software Engineer 1</li>
-            <li>Luis Conde, Software Engineer 3</li>
+            <li class="added">Justin Moon, Senior Software Engineer 1</li>
+            <li class="added">Joseph Girgis, Senior Software Engineer 2</li>
+            <li class="added">Anna Jan, Software Engineer 3</li>
+            <li class="added">Felipe Souza, Senior Software Engineer 1</li>
+            <li class="added">Luis Conde, Software Engineer 3</li>
           </ul>
         </div>
         <ul>
@@ -448,9 +460,10 @@
             <div class="team-box">
               <div class="team-label">Oracle</div>
               <ul>
+                <li class="removed">Stephanie Hanson, Software Engineer 3</li>
                 <li>Matheus Schaly, Software Engineer 2</li>
                 <li>Leonardo Ostien, Senior Software Engineer 1</li>
-                <li>TBD, Software Engineer 3</li>
+                <li class="added">TBD, Software Engineer 3</li>
               </ul>
             </div>
             <div class="team-box">
@@ -459,11 +472,11 @@
                 <li>Victor Figueroa, Senior Software Engineer 1</li>
               </ul>
             </div>
-            <div class="team-box">
+            <div class="team-box added">
               <div class="team-label">Owners Suite <span class="note">← new</span></div>
               <ul>
-                <li>Stephanie Hanson, Software Engineer 3</li>
-                <li>TBD, Senior Software Engineer 1</li>
+                <li class="added">Stephanie Hanson, Software Engineer 3</li>
+                <li class="added">TBD, Senior Software Engineer 1</li>
               </ul>
             </div>
           </li>
