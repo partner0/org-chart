@@ -76,19 +76,27 @@
       margin-right: 12px;
       white-space: nowrap;
     }
-    .algo { color: #E91E63; }
-    .ai { color: #9C27B0; }
-    .core { color: #5C6BC0; }
-    .data { color: #00BCD4; }
-    .engagement { color: #4CAF50; }
-    .insist { color: #FF9800; }
-    .oracle { color: #A1887F; }
-    .owners { color: #8BC34A; }
-    .devx { color: #90A4AE; }
-    .signal { color: #42A5F5; }
-    .tally { color: #FF7043; }
-    .beacon { color: #26A69A; }
-    .revmgmt { color: #9575CD; }
+    .team-box {
+      border: 1px solid #555;
+      border-radius: 6px;
+      padding: 8px 12px;
+      margin: 8px 0;
+      position: relative;
+    }
+    .team-box .team-label {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      font-size: 0.85em;
+      color: #888;
+    }
+    .team-box ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .team-box li {
+      list-style-type: disc;
+    }
     .rationale {
       background: #2a2a2a;
       border-radius: 8px;
@@ -138,7 +146,7 @@
       </td>
       <td>
         <div style="color: #90CAF9; font-weight: bold; margin-bottom: 4px;">Director/Staff Leaders</div>
-        <div>Jess, Filipa, Michael</div>
+        <div>Jess, Filipa, TBD</div>
       </td>
     </tr>
     <tr>
@@ -172,177 +180,195 @@
     <tr>
       <td>
         <div class="manager"><strong>Francois Toubol</strong>, Vice President, Engineering (8/51)</div>
-        <ul>
-          <li><strong>Diego Pasqualin</strong>, Staff Engineer</li>
-          <li><strong>Michael Palumbo</strong>, Staff Engineer</li>
-          <li><strong>Ricardo Marques</strong>, Staff Engineer</li>
-          <li class="ai"><strong>AI of the Tiger</strong>
-            <ul>
-              <li class="ai">Pedro Chen, Senior Software Engineer 2</li>
-              <li class="ai">Felipe Alcantara, Senior Software Engineer 1</li>
-            </ul>
-          </li>
-        </ul>
+        <div class="team-box">
+          <div class="team-label">Staff</div>
+          <ul>
+            <li><strong>Diego Pasqualin</strong>, Staff Engineer</li>
+            <li><strong>Michael Palumbo</strong>, Staff Engineer</li>
+            <li><strong>Ricardo Marques</strong>, Staff Engineer</li>
+          </ul>
+        </div>
+        <div class="team-box">
+          <div class="team-label">AI of the Tiger</div>
+          <ul>
+            <li>Pedro Chen, Senior Software Engineer 2</li>
+            <li>Felipe Alcantara, Senior Software Engineer 1</li>
+          </ul>
+        </div>
       </td>
       <td>
-        <div class="manager"><strong>Francois Toubol</strong>, Vice President, Engineering (4/53)</div>
+        <div class="manager"><strong>Francois Toubol</strong>, Vice President, Engineering (3/53)</div>
         <ul>
-          <li><strong>Diego Pasqualin</strong>, Staff Engineer</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td>
         <div class="manager"><strong>Jeffrey Breece</strong>, Director, Revenue Management (4/8)</div>
-        <ul>
-          <li class="revmgmt">Deena Sewhiy, Senior Revenue Management Analyst</li>
-          <li class="revmgmt">Giovanni Andrulli, Senior Revenue Management Analyst</li>
-          <li><strong>Camille Chaveron</strong>, Manager, Revenue Performance (1/1)
-            <ul>
-              <li class="revmgmt">Yash Rathi, Revenue Management Performance Analyst</li>
-            </ul>
-          </li>
-          <li><strong>Daria Rios</strong>, Manager, GTM Revenue Management (3/3)
-            <ul>
-              <li class="revmgmt">Gautam Kumar, Senior Revenue Management Analyst</li>
-              <li class="revmgmt">Federico Mancanelli, Revenue Management Analyst</li>
-              <li class="revmgmt">Berta Oriol, Revenue Management Analyst</li>
-            </ul>
-          </li>
-        </ul>
+        <div class="team-box">
+          <div class="team-label">Revenue Management</div>
+          <ul>
+            <li>Deena Sewhiy, Senior Revenue Management Analyst</li>
+            <li>Giovanni Andrulli, Senior Revenue Management Analyst</li>
+            <li><strong>Camille Chaveron</strong>, Manager, Revenue Performance (1/1)
+              <ul>
+                <li>Yash Rathi, Revenue Management Performance Analyst</li>
+              </ul>
+            </li>
+            <li><strong>Daria Rios</strong>, Manager, GTM Revenue Management (3/3)
+              <ul>
+                <li>Gautam Kumar, Senior Revenue Management Analyst</li>
+                <li>Federico Mancanelli, Revenue Management Analyst</li>
+                <li>Berta Oriol, Revenue Management Analyst</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </td>
       <td>
         <div class="manager"><strong>Jeffrey Breece</strong>, Director, Revenue Management (4/8)</div>
-        <ul>
-          <li class="revmgmt">Deena Sewhiy, Senior Revenue Management Analyst</li>
-          <li class="revmgmt">Giovanni Andrulli, Senior Revenue Management Analyst</li>
-          <li><strong>Camille Chaveron</strong>, Manager, Revenue Performance (1/1)
-            <ul>
-              <li class="revmgmt">Yash Rathi, Revenue Management Performance Analyst</li>
-            </ul>
-          </li>
-          <li><strong>Daria Rios</strong>, Manager, GTM Revenue Management (3/3)
-            <ul>
-              <li class="revmgmt">Gautam Kumar, Senior Revenue Management Analyst</li>
-              <li class="revmgmt">Federico Mancanelli, Revenue Management Analyst</li>
-              <li class="revmgmt">Berta Oriol, Revenue Management Analyst</li>
-            </ul>
-          </li>
-        </ul>
+        <div class="team-box">
+          <div class="team-label">Revenue Management</div>
+          <ul>
+            <li>Deena Sewhiy, Senior Revenue Management Analyst</li>
+            <li>Giovanni Andrulli, Senior Revenue Management Analyst</li>
+            <li><strong>Camille Chaveron</strong>, Manager, Revenue Performance (1/1)
+              <ul>
+                <li>Yash Rathi, Revenue Management Performance Analyst</li>
+              </ul>
+            </li>
+            <li><strong>Daria Rios</strong>, Manager, GTM Revenue Management (3/3)
+              <ul>
+                <li>Gautam Kumar, Senior Revenue Management Analyst</li>
+                <li>Federico Mancanelli, Revenue Management Analyst</li>
+                <li>Berta Oriol, Revenue Management Analyst</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </td>
     </tr>
     <tr>
       <td>
         <div class="manager"><strong>Paula Justi</strong>, Director, Engineering (7/24)</div>
+        <div class="team-box">
+          <div class="team-label">Core App</div>
+          <ul>
+            <li>Justin Moon, Senior Software Engineer 1</li>
+            <li>Joseph Girgis, Senior Software Engineer 2</li>
+            <li>Anna Jan, Software Engineer 3</li>
+            <li>Felipe Souza, Senior Software Engineer 1</li>
+            <li>Luis Conde, Software Engineer 3</li>
+          </ul>
+        </div>
         <ul>
-          <li class="core"><strong>Core App</strong>
-            <ul>
-              <li class="core">Justin Moon, Senior Software Engineer 1</li>
-              <li class="core">Joseph Gilgins, Senior Software Engineer 2</li>
-              <li class="core">Anna Jan, Software Engineer 3</li>
-              <li class="core">Felipe Souza, Senior Software Engineer 1</li>
-              <li class="core">Luis Conde, Software Engineer 3</li>
-            </ul>
-          </li>
           <li><strong>Vincent Mechele</strong>, Manager, Engineering (6/6)
-            <ul>
-              <li class="insist"><strong>Insist</strong>
-                <ul>
-                  <li class="insist">Georgios Krypotos, Senior Software Engineer 1</li>
-                  <li class="insist">Rodrigo Suárez, Senior Software Engineer 1</li>
-                  <li class="insist">Ahmet Korkmaz, Senior Software Engineer 1</li>
-                  <li class="insist">Sarah Kim, Software Engineer 2</li>
-                  <li class="insist">Nikolaos Zoumprakis, Software Engineer 3</li>
-                  <li class="insist">Inès Martins, Senior Software Engineer 1</li>
-                </ul>
-              </li>
-            </ul>
+            <div class="team-box">
+              <div class="team-label">Insist</div>
+              <ul>
+                <li>Georgios Krypotos, Senior Software Engineer 1</li>
+                <li>Rodrigo Suárez, Senior Software Engineer 1</li>
+                <li>Ahmet Korkmaz, Senior Software Engineer 1</li>
+                <li>Sarah Kim, Software Engineer 2</li>
+                <li>Nikolaos Zoumprakis, Software Engineer 3</li>
+                <li>Inès Martins, Senior Software Engineer 1</li>
+              </ul>
+            </div>
           </li>
           <li><strong>Rita Carvalho</strong>, Manager, Engineering (11/11)
-            <ul>
-              <li class="data"><strong>Data</strong>
-                <ul>
-                  <li class="data">Pedro Gaspar, Senior Software Engineer 3</li>
-                  <li class="data">Jorge Lima, Senior Software Engineer 3</li>
-                  <li class="data">Jaya Balasubramaniam, Senior Data Engineer 2</li>
-                  <li class="data">Lucas Sossai, Senior Software Engineer 1</li>
-                  <li class="data">TBD, Data Scientist</li>
-                </ul>
-              </li>
-              <li class="engagement"><strong>Engagement</strong>
-                <ul>
-                  <li class="engagement">Bálint Botond Bokros, Senior Software Engineer 1</li>
-                  <li class="engagement">Danilo Cestari, Senior Software Engineer 2</li>
-                  <li class="engagement">Tamás Simák, Senior Software Engineer 2</li>
-                  <li class="engagement">Joao Carvalho, Software Engineer 3</li>
-                </ul>
-              </li>
-              <li class="devx"><strong>Platform DevX</strong>
-                <ul>
-                  <li class="devx">Valmiky Arquisasendas, Platform Engineer 2</li>
-                  <li class="devx">Danish Khakwani, Platform Engineer 3</li>
-                </ul>
-              </li>
-            </ul>
+            <div class="team-box">
+              <div class="team-label">Data</div>
+              <ul>
+                <li>Pedro Gaspar, Senior Software Engineer 3</li>
+                <li>Jorge Lima, Senior Software Engineer 3</li>
+                <li>Jaya Balasubramaniam, Senior Data Engineer 2</li>
+                <li>Lucas Sossai, Senior Software Engineer 1</li>
+                <li>TBD, Data Scientist</li>
+              </ul>
+            </div>
+            <div class="team-box">
+              <div class="team-label">Engagement</div>
+              <ul>
+                <li>Bálint Botond Bokros, Senior Software Engineer 1</li>
+                <li>Danilo Cestari, Senior Software Engineer 2</li>
+                <li>Tamás Simák, Senior Software Engineer 2</li>
+                <li>Joao Carvalho, Software Engineer 3</li>
+              </ul>
+            </div>
+            <div class="team-box">
+              <div class="team-label">Platform DevX</div>
+              <ul>
+                <li>Valmiky Arquisasendas, Platform Engineer 2</li>
+                <li>Danish Khakwani, Platform Engineer 3</li>
+              </ul>
+            </div>
           </li>
         </ul>
       </td>
       <td>
-        <div class="manager"><strong>Paula Justi</strong>, Director, Engineering (4/24)</div>
+        <div class="manager"><strong>Paula Justi</strong>, Director, Engineering (5/25)</div>
+        <div class="team-box">
+          <div class="team-label">Staff <span class="note">← from Francois</span></div>
+          <ul>
+            <li><strong>Diego Pasqualin</strong>, Staff Engineer</li>
+            <li><strong>Michael Palumbo</strong>, Staff Engineer</li>
+            <li><strong>Ricardo Marques</strong>, Staff Engineer</li>
+          </ul>
+        </div>
         <ul>
-          <li><strong>Michael Palumbo</strong>, Staff Engineer <span class="note">← from Francois</span></li>
-          <li><strong>Ricardo Marques</strong>, Staff Engineer <span class="note">← from Francois</span></li>
           <li><strong>Vincent Mechele</strong>, Manager, Engineering (10/10)
-            <ul>
-              <li class="insist"><strong>Insist</strong>
-                <ul>
-                  <li class="insist">Georgios Krypotos, Senior Software Engineer 1</li>
-                  <li class="insist">Rodrigo Suárez, Senior Software Engineer 1</li>
-                  <li class="insist">Ahmet Korkmaz, Senior Software Engineer 1</li>
-                  <li class="insist">Sarah Kim, Software Engineer 2</li>
-                  <li class="insist">Nikolaos Zoumprakis, Software Engineer 3</li>
-                  <li class="insist">Inès Martins, Senior Software Engineer 1</li>
-                </ul>
-              </li>
-              <li class="devx"><strong>Platform DevX</strong> <span class="note">← from Rita</span>
-                <ul>
-                  <li class="devx">Valmiky Arquisasendas, Platform Engineer 2</li>
-                  <li class="devx">Danish Khakwani, Platform Engineer 3</li>
-                </ul>
-              </li>
-              <li class="ai"><strong>AI of the Tiger</strong> <span class="note">← from Francois</span>
-                <ul>
-                  <li class="ai">Pedro Chen, Senior Software Engineer 2</li>
-                  <li class="ai">Felipe Alcantara, Senior Software Engineer 1</li>
-                </ul>
-              </li>
-            </ul>
+            <div class="team-box">
+              <div class="team-label">Insist</div>
+              <ul>
+                <li>Georgios Krypotos, Senior Software Engineer 1</li>
+                <li>Rodrigo Suárez, Senior Software Engineer 1</li>
+                <li>Ahmet Korkmaz, Senior Software Engineer 1</li>
+                <li>Sarah Kim, Software Engineer 2</li>
+                <li>Nikolaos Zoumprakis, Software Engineer 3</li>
+                <li>Inès Martins, Senior Software Engineer 1</li>
+              </ul>
+            </div>
+            <div class="team-box">
+              <div class="team-label">Platform DevX <span class="note">← from Rita</span></div>
+              <ul>
+                <li>Valmiky Arquisasendas, Platform Engineer 2</li>
+                <li>Danish Khakwani, Platform Engineer 3</li>
+              </ul>
+            </div>
+            <div class="team-box">
+              <div class="team-label">AI of the Tiger <span class="note">← from Francois</span></div>
+              <ul>
+                <li>Pedro Chen, Senior Software Engineer 2</li>
+                <li>Felipe Alcantara, Senior Software Engineer 1</li>
+              </ul>
+            </div>
           </li>
           <li><strong>Rita Carvalho</strong>, Manager, Engineering (10/10)
-            <ul>
-              <li class="engagement"><strong>Engagement</strong>
-                <ul>
-                  <li class="engagement">Bálint Botond Bokros, Senior Software Engineer 1</li>
-                  <li class="engagement">Danilo Cestari, Senior Software Engineer 2</li>
-                  <li class="engagement">Tamás Simák, Senior Software Engineer 2</li>
-                  <li class="engagement">Joao Carvalho, Software Engineer 3</li>
-                </ul>
-              </li>
-              <li class="core"><strong>Core App</strong> <span class="note">← from Paula</span>
-                <ul>
-                  <li class="core">Justin Moon, Senior Software Engineer 1</li>
-                  <li class="core">Joseph Gilgins, Senior Software Engineer 2</li>
-                  <li class="core">Anna Jan, Software Engineer 3</li>
-                  <li class="core">Felipe Souza, Senior Software Engineer 1</li>
-                  <li class="core">Luis Conde, Software Engineer 3</li>
-                </ul>
-              </li>
-              <li class="beacon"><strong>Beacon</strong> <span class="note">← from Mariah</span>
-                <ul>
-                  <li class="beacon">Pedro Garcia, Software Engineer 3</li>
-                </ul>
-              </li>
-            </ul>
+            <div class="team-box">
+              <div class="team-label">Data</div>
+              <ul>
+                <li>Pedro Gaspar, Senior Software Engineer 3</li>
+                <li>Jorge Lima, Senior Software Engineer 3</li>
+                <li>Jaya Balasubramaniam, Senior Data Engineer 2</li>
+                <li>Lucas Sossai, Senior Software Engineer 1</li>
+                <li>TBD, Data Scientist</li>
+              </ul>
+            </div>
+            <div class="team-box">
+              <div class="team-label">Engagement</div>
+              <ul>
+                <li>Bálint Botond Bokros, Senior Software Engineer 1</li>
+                <li>Danilo Cestari, Senior Software Engineer 2</li>
+                <li>Tamás Simák, Senior Software Engineer 2</li>
+                <li>Joao Carvalho, Software Engineer 3</li>
+              </ul>
+            </div>
+            <div class="team-box">
+              <div class="team-label">Beacon <span class="note">← from Mariah</span></div>
+              <ul>
+                <li>Pedro Garcia, Software Engineer 3</li>
+              </ul>
+            </div>
           </li>
         </ul>
       </td>
@@ -350,110 +376,102 @@
     <tr>
       <td>
         <div class="manager"><strong>Mariah Hammer</strong>, Director, Engineering (7/11)</div>
+        <div class="team-box">
+          <div class="team-label">Algo Perf</div>
+          <ul>
+            <li>Jon Vukovic, Senior Data Scientist 1</li>
+            <li>Gabriel Medeiros, Senior Data Engineer 1</li>
+            <li>Agus Demarchi, Senior Data Scientist 1</li>
+            <li>TBD, Data Scientist</li>
+          </ul>
+        </div>
+        <div class="team-box">
+          <div class="team-label">Signal</div>
+          <ul>
+            <li>Gregory Chavez, Senior Software Engineer 1</li>
+          </ul>
+        </div>
+        <div class="team-box">
+          <div class="team-label">Beacon</div>
+          <ul>
+            <li>Pedro Garcia, Software Engineer 3</li>
+          </ul>
+        </div>
         <ul>
-          <li class="algo"><strong>Algo Perf</strong>
-            <ul>
-              <li class="algo">Jon Vukovic, Senior Data Scientist 1</li>
-              <li class="algo">Gabriel Medeiros, Senior Data Engineer 1</li>
-              <li class="algo">Agus Demarchi, Senior Data Scientist 1</li>
-              <li class="algo">TBD, Data Scientist</li>
-            </ul>
-          </li>
-          <li class="signal"><strong>Signal</strong>
-            <ul>
-              <li class="signal">Gregory Chavez, Senior Software Engineer 1</li>
-            </ul>
-          </li>
-          <li class="beacon"><strong>Beacon</strong>
-            <ul>
-              <li class="beacon">Pedro Garcia, Software Engineer 3</li>
-            </ul>
-          </li>
           <li><strong>Lyudmila Antonova</strong>, Technical Lead Manager (4/4)
-            <ul>
-              <li class="oracle"><strong>Oracle</strong>
-                <ul>
-                  <li class="oracle">Stephanie Hanson, Software Engineer 3</li>
-                  <li class="oracle">Matheus Schaly, Software Engineer 2</li>
-                  <li class="oracle">Leonardo Ostien, Senior Software Engineer 1</li>
-                </ul>
-              </li>
-              <li class="tally"><strong>Tally</strong>
-                <ul>
-                  <li class="tally">Victor Figueroa, Senior Software Engineer 1</li>
-                </ul>
-              </li>
-            </ul>
+            <div class="team-box">
+              <div class="team-label">Oracle</div>
+              <ul>
+                <li>Stephanie Hanson, Software Engineer 3</li>
+                <li>Matheus Schaly, Software Engineer 2</li>
+                <li>Leonardo Ostien, Senior Software Engineer 1</li>
+              </ul>
+            </div>
+            <div class="team-box">
+              <div class="team-label">Tally</div>
+              <ul>
+                <li>Victor Figueroa, Senior Software Engineer 1</li>
+              </ul>
+            </div>
           </li>
         </ul>
       </td>
       <td>
         <div class="manager"><strong>Mariah Hammer</strong>, Director, Engineering (11/17)</div>
+        <div class="team-box">
+          <div class="team-label">Algo Perf</div>
+          <ul>
+            <li>Jon Vukovic, Senior Data Scientist 1</li>
+            <li>Gabriel Medeiros, Senior Data Engineer 1</li>
+            <li>Agus Demarchi, Senior Data Scientist 1</li>
+            <li>TBD, Data Scientist</li>
+          </ul>
+        </div>
+        <div class="team-box">
+          <div class="team-label">Signal</div>
+          <ul>
+            <li>Gregory Chavez, Senior Software Engineer 1</li>
+          </ul>
+        </div>
+        <div class="team-box">
+          <div class="team-label">Core App <span class="note">← from Paula</span></div>
+          <ul>
+            <li>Justin Moon, Senior Software Engineer 1</li>
+            <li>Joseph Girgis, Senior Software Engineer 2</li>
+            <li>Anna Jan, Software Engineer 3</li>
+            <li>Felipe Souza, Senior Software Engineer 1</li>
+            <li>Luis Conde, Software Engineer 3</li>
+          </ul>
+        </div>
         <ul>
-          <li class="algo"><strong>Algo Perf</strong>
-            <ul>
-              <li class="algo">Jon Vukovic, Senior Data Scientist 1</li>
-              <li class="algo">Gabriel Medeiros, Senior Data Engineer 1</li>
-              <li class="algo">Agus Demarchi, Senior Data Scientist 1</li>
-              <li class="algo">TBD, Data Scientist</li>
-            </ul>
-          </li>
-          <li class="signal"><strong>Signal</strong>
-            <ul>
-              <li class="signal">Gregory Chavez, Senior Software Engineer 1</li>
-            </ul>
-          </li>
-          <li class="data"><strong>Data</strong> <span class="note">← from Rita</span>
-            <ul>
-              <li class="data">Pedro Gaspar, Senior Software Engineer 3</li>
-              <li class="data">Jorge Lima, Senior Software Engineer 3</li>
-              <li class="data">Jaya Balasubramaniam, Senior Data Engineer 2</li>
-              <li class="data">Lucas Sossai, Senior Software Engineer 1</li>
-              <li class="data">TBD, Data Scientist</li>
-            </ul>
-          </li>
           <li><strong>Lyudmila Antonova</strong>, Technical Lead Manager (6/6)
-            <ul>
-              <li class="oracle"><strong>Oracle</strong>
-                <ul>
-                  <li class="oracle">Matheus Schaly, Software Engineer 2</li>
-                  <li class="oracle">Leonardo Ostien, Senior Software Engineer 1</li>
-                  <li class="oracle">TBD, Software Engineer 3</li>
-                </ul>
-              </li>
-              <li class="tally"><strong>Tally</strong>
-                <ul>
-                  <li class="tally">Victor Figueroa, Senior Software Engineer 1</li>
-                </ul>
-              </li>
-              <li class="owners"><strong>Owners Suite</strong> <span class="note">← new (could be under Paula)</span>
-                <ul>
-                  <li class="owners">Stephanie Hanson, Software Engineer 3</li>
-                  <li class="owners">TBD, Senior Software Engineer 1</li>
-                </ul>
-              </li>
-            </ul>
+            <div class="team-box">
+              <div class="team-label">Oracle</div>
+              <ul>
+                <li>Matheus Schaly, Software Engineer 2</li>
+                <li>Leonardo Ostien, Senior Software Engineer 1</li>
+                <li>TBD, Software Engineer 3</li>
+              </ul>
+            </div>
+            <div class="team-box">
+              <div class="team-label">Tally</div>
+              <ul>
+                <li>Victor Figueroa, Senior Software Engineer 1</li>
+              </ul>
+            </div>
+            <div class="team-box">
+              <div class="team-label">Owners Suite <span class="note">← new</span></div>
+              <ul>
+                <li>Stephanie Hanson, Software Engineer 3</li>
+                <li>TBD, Senior Software Engineer 1</li>
+              </ul>
+            </div>
           </li>
         </ul>
       </td>
     </tr>
   </table>
 
-  <div class="legend">
-    <strong>Legend:</strong>
-    <span class="algo">Algo Perf</span> |
-    <span class="ai">AI of the Tiger</span> |
-    <span class="core">Core App</span> |
-    <span class="data">Data</span> |
-    <span class="engagement">Engagement</span> |
-    <span class="insist">Insist</span> |
-    <span class="oracle">Oracle</span> |
-    <span class="owners">Owners Suite</span> |
-    <span class="devx">Platform DevX</span> |
-    <span class="signal">Signal</span> |
-    <span class="tally">Tally</span> |
-    <span class="beacon">Beacon</span> |
-    <span class="revmgmt">Revenue Management</span>
-  </div>
+
 </body>
 </html>

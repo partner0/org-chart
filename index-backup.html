@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposed PDE Org Improvements</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #1a1a1a;
+      color: #e0e0e0;
+    }
+    h1 {
+      color: #fff;
+      font-size: 2em;
+      margin-bottom: 24px;
+    }
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: #1a1a1a;
+      border: 1px solid #444;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th {
+      background: #2a2a2a;
+      color: #fff;
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 1em;
+      border: 1px solid #444;
+    }
+    td {
+      padding: 20px;
+      vertical-align: top;
+      border: 1px solid #444;
+    }
+    .manager {
+      font-weight: normal;
+      margin-bottom: 12px;
+      color: #e0e0e0;
+    }
+    .manager strong {
+      font-weight: bold;
+    }
+    ul {
+      list-style-type: disc;
+      margin: 0;
+      padding-left: 24px;
+    }
+    ul ul {
+      list-style-type: circle;
+    }
+    ul ul ul {
+      list-style-type: square;
+    }
+    li {
+      margin: 4px 0;
+      line-height: 1.5;
+    }
+    .note {
+      color: #888;
+    }
+    .legend {
+      margin-top: 20px;
+      padding: 12px;
+      background: #2a2a2a;
+      border-radius: 4px;
+    }
+    .legend span {
+      margin-right: 12px;
+      white-space: nowrap;
+    }
+    .algo { color: #E91E63; }
+    .ai { color: #9C27B0; }
+    .core { color: #5C6BC0; }
+    .data { color: #00BCD4; }
+    .engagement { color: #4CAF50; }
+    .insist { color: #FF9800; }
+    .oracle { color: #A1887F; }
+    .owners { color: #8BC34A; }
+    .devx { color: #90A4AE; }
+    .signal { color: #42A5F5; }
+    .tally { color: #FF7043; }
+    .beacon { color: #26A69A; }
+    .revmgmt { color: #9575CD; }
+    .rationale {
+      background: #2a2a2a;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+    }
+    .rationale h2 {
+      color: #fff;
+      font-size: 1.3em;
+      margin: 0 0 16px 0;
+    }
+    .rationale ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .rationale li {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    .rationale li strong {
+      color: #90CAF9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Proposed PDE Org Improvements</h1>
+
+  <div class="rationale">
+    <h2>Rationale</h2>
+    <ul>
+      <li><strong>Further optimizing PDE effectiveness:</strong> We get better at taking larger product bets more often (like Neyoba) by reducing overhead for ICs and improving alignment driven by Director/Staff leads. This increased focus and ruthless prioritization will result in higher impact on listings, GBV, and take rate.</li>
+      <li><strong>Catalyzing and capitalizing on AI transformation:</strong> We create a growth opportunity for Paula, with chances to lead day-to-day management and engineering operations, and rebalancing Francois' impact toward strategy and technical leadership while allowing him to delegate more. This will result in stronger leadership continuity, succession planning, and more space to push further toward AI transformation, and the largely untapped productivity potential that exists there.</li>
+      <li><strong>Balancing the load between EMs:</strong> We target an EM:IC ratio of 1:10, leveraging our current EM staff without needing additional managers. This rebalancing will enable more sustainable spans of control and improved retention. This will result in reduced overhead and an environment that further enables ICs to increase their contributions and focus their energy on the most impactful bets.</li>
+    </ul>
+  </div>
+
+  <h2 style="color: #fff; font-size: 1.3em; margin: 24px 0 16px 0;">PDE Alignment Structure</h2>
+  <table>
+    <tr>
+      <th style="width: 50%;">Internal-Facing OBTs</th>
+      <th style="width: 50%;">Customer-Facing OBTs</th>
+    </tr>
+    <tr>
+      <td>
+        <div style="color: #90CAF9; font-weight: bold; margin-bottom: 4px;">Director/Staff Leaders</div>
+        <div>Phil, Jorge</div>
+      </td>
+      <td>
+        <div style="color: #90CAF9; font-weight: bold; margin-bottom: 4px;">Director/Staff Leaders</div>
+        <div>Jess, Filipa, Michael</div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div style="color: #90CAF9; font-weight: bold; margin-bottom: 4px;">Product Managers</div>
+        <div>Devon, Khoa</div>
+      </td>
+      <td>
+        <div style="color: #90CAF9; font-weight: bold; margin-bottom: 4px;">Product Managers</div>
+        <div>Christina, Sophie, Keysha, Ian</div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div style="color: #90CAF9; font-weight: bold; margin-bottom: 4px;">OBTs</div>
+        <div><span class="devx">Platform DevX</span>, <span class="insist">Insist</span>, <span class="data">Data</span>, <span class="algo">Algo Perf</span></div>
+      </td>
+      <td>
+        <div style="color: #90CAF9; font-weight: bold; margin-bottom: 4px;">OBTs</div>
+        <div><span class="core">Core App</span>, <span class="engagement">Engagement</span>, <span class="oracle">Oracle</span>, <span class="owners">Owners Suite</span>, <span class="signal">Signal</span>, <span class="beacon">Beacon</span>, <span class="tally">Tally</span></div>
+      </td>
+    </tr>
+  </table>
+
+  <h2 style="color: #fff; font-size: 1.3em; margin: 24px 0 16px 0;">Engineering Org Changes</h2>
+  <table>
+    <tr>
+      <th>Current State</th>
+      <th>Target State</th>
+    </tr>
+    <tr>
+      <td>
+        <div class="manager"><strong>Francois Toubol</strong>, Vice President, Engineering (8/51)</div>
+        <ul>
+          <li><strong>Diego Pasqualin</strong>, Staff Engineer</li>
+          <li><strong>Michael Palumbo</strong>, Staff Engineer</li>
+          <li><strong>Ricardo Marques</strong>, Staff Engineer</li>
+          <li class="ai"><strong>AI of the Tiger</strong>
+            <ul>
+              <li class="ai">Pedro Chen, Senior Software Engineer 2</li>
+              <li class="ai">Felipe Alcantara, Senior Software Engineer 1</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+      <td>
+        <div class="manager"><strong>Francois Toubol</strong>, Vice President, Engineering (4/53)</div>
+        <ul>
+          <li><strong>Diego Pasqualin</strong>, Staff Engineer</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="manager"><strong>Jeffrey Breece</strong>, Director, Revenue Management (4/8)</div>
+        <ul>
+          <li class="revmgmt">Deena Sewhiy, Senior Revenue Management Analyst</li>
+          <li class="revmgmt">Giovanni Andrulli, Senior Revenue Management Analyst</li>
+          <li><strong>Camille Chaveron</strong>, Manager, Revenue Performance (1/1)
+            <ul>
+              <li class="revmgmt">Yash Rathi, Revenue Management Performance Analyst</li>
+            </ul>
+          </li>
+          <li><strong>Daria Rios</strong>, Manager, GTM Revenue Management (3/3)
+            <ul>
+              <li class="revmgmt">Gautam Kumar, Senior Revenue Management Analyst</li>
+              <li class="revmgmt">Federico Mancanelli, Revenue Management Analyst</li>
+              <li class="revmgmt">Berta Oriol, Revenue Management Analyst</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+      <td>
+        <div class="manager"><strong>Jeffrey Breece</strong>, Director, Revenue Management (4/8)</div>
+        <ul>
+          <li class="revmgmt">Deena Sewhiy, Senior Revenue Management Analyst</li>
+          <li class="revmgmt">Giovanni Andrulli, Senior Revenue Management Analyst</li>
+          <li><strong>Camille Chaveron</strong>, Manager, Revenue Performance (1/1)
+            <ul>
+              <li class="revmgmt">Yash Rathi, Revenue Management Performance Analyst</li>
+            </ul>
+          </li>
+          <li><strong>Daria Rios</strong>, Manager, GTM Revenue Management (3/3)
+            <ul>
+              <li class="revmgmt">Gautam Kumar, Senior Revenue Management Analyst</li>
+              <li class="revmgmt">Federico Mancanelli, Revenue Management Analyst</li>
+              <li class="revmgmt">Berta Oriol, Revenue Management Analyst</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="manager"><strong>Paula Justi</strong>, Director, Engineering (7/24)</div>
+        <ul>
+          <li class="core"><strong>Core App</strong>
+            <ul>
+              <li class="core">Justin Moon, Senior Software Engineer 1</li>
+              <li class="core">Joseph Girgis, Senior Software Engineer 2</li>
+              <li class="core">Anna Jan, Software Engineer 3</li>
+              <li class="core">Felipe Souza, Senior Software Engineer 1</li>
+              <li class="core">Luis Conde, Software Engineer 3</li>
+            </ul>
+          </li>
+          <li><strong>Vincent Mechele</strong>, Manager, Engineering (6/6)
+            <ul>
+              <li class="insist"><strong>Insist</strong>
+                <ul>
+                  <li class="insist">Georgios Krypotos, Senior Software Engineer 1</li>
+                  <li class="insist">Rodrigo Suárez, Senior Software Engineer 1</li>
+                  <li class="insist">Ahmet Korkmaz, Senior Software Engineer 1</li>
+                  <li class="insist">Sarah Kim, Software Engineer 2</li>
+                  <li class="insist">Nikolaos Zoumprakis, Software Engineer 3</li>
+                  <li class="insist">Inès Martins, Senior Software Engineer 1</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><strong>Rita Carvalho</strong>, Manager, Engineering (11/11)
+            <ul>
+              <li class="data"><strong>Data</strong>
+                <ul>
+                  <li class="data">Pedro Gaspar, Senior Software Engineer 3</li>
+                  <li class="data">Jorge Lima, Senior Software Engineer 3</li>
+                  <li class="data">Jaya Balasubramaniam, Senior Data Engineer 2</li>
+                  <li class="data">Lucas Sossai, Senior Software Engineer 1</li>
+                  <li class="data">TBD, Data Scientist</li>
+                </ul>
+              </li>
+              <li class="engagement"><strong>Engagement</strong>
+                <ul>
+                  <li class="engagement">Bálint Botond Bokros, Senior Software Engineer 1</li>
+                  <li class="engagement">Danilo Cestari, Senior Software Engineer 2</li>
+                  <li class="engagement">Tamás Simák, Senior Software Engineer 2</li>
+                  <li class="engagement">Joao Carvalho, Software Engineer 3</li>
+                </ul>
+              </li>
+              <li class="devx"><strong>Platform DevX</strong>
+                <ul>
+                  <li class="devx">Valmiky Arquisasendas, Platform Engineer 2</li>
+                  <li class="devx">Danish Khakwani, Platform Engineer 3</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+      <td>
+        <div class="manager"><strong>Paula Justi</strong>, Director, Engineering (4/24)</div>
+        <ul>
+          <li><strong>Michael Palumbo</strong>, Staff Engineer <span class="note">← from Francois</span></li>
+          <li><strong>Ricardo Marques</strong>, Staff Engineer <span class="note">← from Francois</span></li>
+          <li><strong>Vincent Mechele</strong>, Manager, Engineering (10/10)
+            <ul>
+              <li class="insist"><strong>Insist</strong>
+                <ul>
+                  <li class="insist">Georgios Krypotos, Senior Software Engineer 1</li>
+                  <li class="insist">Rodrigo Suárez, Senior Software Engineer 1</li>
+                  <li class="insist">Ahmet Korkmaz, Senior Software Engineer 1</li>
+                  <li class="insist">Sarah Kim, Software Engineer 2</li>
+                  <li class="insist">Nikolaos Zoumprakis, Software Engineer 3</li>
+                  <li class="insist">Inès Martins, Senior Software Engineer 1</li>
+                </ul>
+              </li>
+              <li class="devx"><strong>Platform DevX</strong> <span class="note">← from Rita</span>
+                <ul>
+                  <li class="devx">Valmiky Arquisasendas, Platform Engineer 2</li>
+                  <li class="devx">Danish Khakwani, Platform Engineer 3</li>
+                </ul>
+              </li>
+              <li class="ai"><strong>AI of the Tiger</strong> <span class="note">← from Francois</span>
+                <ul>
+                  <li class="ai">Pedro Chen, Senior Software Engineer 2</li>
+                  <li class="ai">Felipe Alcantara, Senior Software Engineer 1</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><strong>Rita Carvalho</strong>, Manager, Engineering (10/10)
+            <ul>
+              <li class="engagement"><strong>Engagement</strong>
+                <ul>
+                  <li class="engagement">Bálint Botond Bokros, Senior Software Engineer 1</li>
+                  <li class="engagement">Danilo Cestari, Senior Software Engineer 2</li>
+                  <li class="engagement">Tamás Simák, Senior Software Engineer 2</li>
+                  <li class="engagement">Joao Carvalho, Software Engineer 3</li>
+                </ul>
+              </li>
+              <li class="core"><strong>Core App</strong> <span class="note">← from Paula</span>
+                <ul>
+                  <li class="core">Justin Moon, Senior Software Engineer 1</li>
+                  <li class="core">Joseph Girgis, Senior Software Engineer 2</li>
+                  <li class="core">Anna Jan, Software Engineer 3</li>
+                  <li class="core">Felipe Souza, Senior Software Engineer 1</li>
+                  <li class="core">Luis Conde, Software Engineer 3</li>
+                </ul>
+              </li>
+              <li class="beacon"><strong>Beacon</strong> <span class="note">← from Mariah</span>
+                <ul>
+                  <li class="beacon">Pedro Garcia, Software Engineer 3</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="manager"><strong>Mariah Hammer</strong>, Director, Engineering (7/11)</div>
+        <ul>
+          <li class="algo"><strong>Algo Perf</strong>
+            <ul>
+              <li class="algo">Jon Vukovic, Senior Data Scientist 1</li>
+              <li class="algo">Gabriel Medeiros, Senior Data Engineer 1</li>
+              <li class="algo">Agus Demarchi, Senior Data Scientist 1</li>
+              <li class="algo">TBD, Data Scientist</li>
+            </ul>
+          </li>
+          <li class="signal"><strong>Signal</strong>
+            <ul>
+              <li class="signal">Gregory Chavez, Senior Software Engineer 1</li>
+            </ul>
+          </li>
+          <li class="beacon"><strong>Beacon</strong>
+            <ul>
+              <li class="beacon">Pedro Garcia, Software Engineer 3</li>
+            </ul>
+          </li>
+          <li><strong>Lyudmila Antonova</strong>, Technical Lead Manager (4/4)
+            <ul>
+              <li class="oracle"><strong>Oracle</strong>
+                <ul>
+                  <li class="oracle">Stephanie Hanson, Software Engineer 3</li>
+                  <li class="oracle">Matheus Schaly, Software Engineer 2</li>
+                  <li class="oracle">Leonardo Ostien, Senior Software Engineer 1</li>
+                </ul>
+              </li>
+              <li class="tally"><strong>Tally</strong>
+                <ul>
+                  <li class="tally">Victor Figueroa, Senior Software Engineer 1</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+      <td>
+        <div class="manager"><strong>Mariah Hammer</strong>, Director, Engineering (11/17)</div>
+        <ul>
+          <li class="algo"><strong>Algo Perf</strong>
+            <ul>
+              <li class="algo">Jon Vukovic, Senior Data Scientist 1</li>
+              <li class="algo">Gabriel Medeiros, Senior Data Engineer 1</li>
+              <li class="algo">Agus Demarchi, Senior Data Scientist 1</li>
+              <li class="algo">TBD, Data Scientist</li>
+            </ul>
+          </li>
+          <li class="signal"><strong>Signal</strong>
+            <ul>
+              <li class="signal">Gregory Chavez, Senior Software Engineer 1</li>
+            </ul>
+          </li>
+          <li class="data"><strong>Data</strong> <span class="note">← from Rita</span>
+            <ul>
+              <li class="data">Pedro Gaspar, Senior Software Engineer 3</li>
+              <li class="data">Jorge Lima, Senior Software Engineer 3</li>
+              <li class="data">Jaya Balasubramaniam, Senior Data Engineer 2</li>
+              <li class="data">Lucas Sossai, Senior Software Engineer 1</li>
+              <li class="data">TBD, Data Scientist</li>
+            </ul>
+          </li>
+          <li><strong>Lyudmila Antonova</strong>, Technical Lead Manager (6/6)
+            <ul>
+              <li class="oracle"><strong>Oracle</strong>
+                <ul>
+                  <li class="oracle">Matheus Schaly, Software Engineer 2</li>
+                  <li class="oracle">Leonardo Ostien, Senior Software Engineer 1</li>
+                  <li class="oracle">TBD, Software Engineer 3</li>
+                </ul>
+              </li>
+              <li class="tally"><strong>Tally</strong>
+                <ul>
+                  <li class="tally">Victor Figueroa, Senior Software Engineer 1</li>
+                </ul>
+              </li>
+              <li class="owners"><strong>Owners Suite</strong> <span class="note">← new (could be under Paula)</span>
+                <ul>
+                  <li class="owners">Stephanie Hanson, Software Engineer 3</li>
+                  <li class="owners">TBD, Senior Software Engineer 1</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <div class="legend">
+    <strong>Legend:</strong>
+    <span class="algo">Algo Perf</span> |
+    <span class="ai">AI of the Tiger</span> |
+    <span class="core">Core App</span> |
+    <span class="data">Data</span> |
+    <span class="engagement">Engagement</span> |
+    <span class="insist">Insist</span> |
+    <span class="oracle">Oracle</span> |
+    <span class="owners">Owners Suite</span> |
+    <span class="devx">Platform DevX</span> |
+    <span class="signal">Signal</span> |
+    <span class="tally">Tally</span> |
+    <span class="beacon">Beacon</span> |
+    <span class="revmgmt">Revenue Management</span>
+  </div>
+</body>
+</html>
